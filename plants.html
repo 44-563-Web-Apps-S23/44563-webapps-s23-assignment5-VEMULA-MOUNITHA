@@ -13,6 +13,27 @@
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </head>
 <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light" style="font-family; font-size: larger; font-size: larger;" >
+        <a class="navbar-brand" href="plants.html">Interesting Plants</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#PlantNavbarContent" aria-controls="PlantNavbarContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggle-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="PlantNavbarContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="plants.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="basic.html">Basic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="advanced.html">Advanced</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 <h1 style="font-size: large;color: lightcoral; font-family: 'Times New Roman', Times, serif;text-align: center;">Plants by Mounitha Vemula</h1>
 <div class="container">
     <div class="row">
@@ -49,7 +70,7 @@
     <br>
     <br>
     <div class="container">
-        <caption style="color:aqua">Table in Bootstrap with Letter, Plant, Mountain and Lake</caption>
+        <caption style="color:black">Table in Bootstrap with Letter, Plant, Mountain and Lake</caption>
         <table class="table table-thead table-bordered table-info table-striped table-hover table-responsive"
          style="text-align: center;">
             <thead class="table-danger">
@@ -102,18 +123,52 @@
     </div>
     <br>  
     <div class="container btn-toolbar">
-        <div class="btn-group" role="group" aria-label="Imaged Insects">
+        <div class="btn-group" role="group" aria-label="Imaged Plants">
             <button class="btn btn-md btn-success btn-outline-dark" type="button">V</button>
             <button class="btn btn-md btn-success btn-outline-dark" type="button">E</button>
             <button class="btn btn-md btn-success btn-outline-dark" type="button">M</button>
         </div>
-        <div class="btn-group" role="group" aria-label="Lettered Insects">
+        <div class="btn-group" role="group" aria-label="Lettered Plants">
             <button class="btn btn-md btn-warning btn-outline-dark" type="button">U</button>
             <button class="btn btn-md btn-warning btn-outline-dark" type="button">L</button>
         </div>
-        <div class="btn-group" role="group" aria-label="Remained Lettered Insects">
+        <div class="btn-group" role="group" aria-label="Remained Lettered Plants">
             <button class="btn btn-md btn-danger btn-outline-dark" type="button">A</button>
         </div>
+      </div>
+      <br>
+      <div class="container">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" type="button">
+                Menu
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="basic.html">Link to Basic Page</a>
+                <a class="dropdown-item" href="advanced.html">Link to Advanced Page</a>
+            </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="container">
+        <form action="">
+            <div class="form-group">
+                <label for="PlantEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="PlanttEmail" 
+                aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="form-group">
+                <label for="PlanttInput" class="form-label">Insect</label>
+                <input type="text" class="form-control" id="PlanttInput" 
+                placeholder="Enter Your Plantt">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="PlantCheck">
+                <label class="form-check-label" for="PlantCheck">Sign up for newsletter?</label>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
       </div>
       <br>
 </body>
